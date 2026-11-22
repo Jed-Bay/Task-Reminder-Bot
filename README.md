@@ -1,11 +1,11 @@
-# Chore Reminder Bot
+# Household Task Reminder
 
 Sends each housemate a WhatsApp message every morning at 06:00 (EAT) telling them
-their chore for the day. The schedule is a 21-day cycle read from `horaire.csv`
+their assigned task for the day. The schedule is a 21-day rotation read from `horaire.csv`
 and it restarts automatically after day 21.
 
 ## How it works
-- `horaire.csv`: who does what on each day of the cycle
+- `horaire.csv`: who does what on each day of the rotation
 - `rappel.py`: computes the cycle day, builds the message, sends it via [CallMeBot](https://www.callmebot.com/)
 - GitHub Actions runs the script daily (free, no server needed)
 - Phone numbers and API keys live in a GitHub Secret (`CONTACTS_JSON`), never in the code
@@ -16,7 +16,7 @@ and it restarts automatically after day 21.
    ```json
    {"Name1":{"phone":"+000000000000","apikey":"XXXXXXX"},"Name2":{"phone":"+000000000000","apikey":"XXXXXXX"}}
    ```
-3. Adjust `START_DATE` in `config.py` (day 1 of the cycle)
+3. Adjust `START_DATE` in `config.py` (day 1 of the rotation)
 
 ## Local preview
 ```bash
