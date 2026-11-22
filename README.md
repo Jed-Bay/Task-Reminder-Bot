@@ -4,9 +4,8 @@ Sends each housemate a WhatsApp message every morning at 06:00 (EAT) telling the
 their assigned task for the day. The schedule is a 21-day rotation read from `horaire.csv`
 and it restarts automatically after day 21.
 
-<p align="center">
-  <img src="docs/preview.svg" alt="Example of the daily WhatsApp reminder" width="300">
-</p>
+<img width="2720" height="2720" alt="whatsapp_reminder_preview" src="https://github.com/user-attachments/assets/c992143e-baf6-4ffa-a6d3-056cc21cb2e6" />
+
 
 ## How it works
 - `horaire.csv`: who does what on each day of the rotation
